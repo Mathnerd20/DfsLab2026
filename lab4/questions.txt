@@ -1,1 +1,1 @@
-Stack implementation, palindrome check, prefix to postfix.
+Stack implementation, palindrome check, infix to postfix.

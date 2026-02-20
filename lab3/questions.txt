@@ -1,1 +1,1 @@
-Implement counting sort, radix sort, bucket sort.
+Implement counting sort(both normal and stable), radix sort, bucket sort.
