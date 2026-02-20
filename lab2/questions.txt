@@ -1,0 +1,1 @@
+Quick sort and merge sort implementation and use switch case.

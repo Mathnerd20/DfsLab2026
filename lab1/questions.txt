@@ -1,0 +1,3 @@
+Implement Linear and Binary Search. Also make it interactive using switch case.
+implement bubble, selection, and insertion sort. Also make it interactive using switch case.
+
