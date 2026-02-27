@@ -15,6 +15,8 @@ void delEnd(struct node **);
 void search(struct node **);
 void display(struct node **);
 
+// HAS SOME ERRORS PLEASE CHECK !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
 int main(){
 	struct node *head;
 	head = NULL;
