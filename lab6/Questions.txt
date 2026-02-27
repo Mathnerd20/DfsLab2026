@@ -1,2 +1,3 @@
 This labs questions are:
-
+Linked list (with custom choices ,add front , at loc, back....)
+Circular Que using linked list
