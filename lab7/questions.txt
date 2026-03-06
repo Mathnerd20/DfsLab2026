@@ -1,4 +1,7 @@
 Today's questions are:
-1.
-2.
+1. Find the middle element of a linked list
+2. Delete the duplicates af a linked list (sorted linked list)
+3. Reverse the linked list
+4. Merge two sorted linked lists
+5. Find the higest element in linked list.
 
