@@ -33,7 +33,7 @@ int partition(int n, int low, int high, int a[])
 {
 	int left, right;
 	int pivot = a[low];
-	left = low + 1;
+	left = low;
 	right = high;
 	while(left < right)
 	{
