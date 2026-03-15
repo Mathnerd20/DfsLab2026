@@ -1,5 +1,5 @@
-//Done at home, didn't do in lab
 #include<stdio.h>
+//Done at home, didn't do in lab
 int dig(int);
 int main()
 {
