@@ -1,4 +1,4 @@
 Questions of todays lab:
 1. Completed circular doubly linked list of last lab;
-2. Try trees using arrays;
-*(Maybe no evalutation this lab)*
+2. Stack using queues;
+2. Queues using stacks;
