@@ -16,7 +16,7 @@ int main()
     int i = 0;
     struct node *top = NULL;
     printf("Postfix is: ");
-    push(&top, ' ');
+    push(&top, ' '); //without this, top is null and y = top->info fails giving seg fault
     while(s[i] != '\0')
     {
 	if(s[i] >= '0' && s[i] <= '9')
@@ -32,7 +32,7 @@ int main()
 		{
 		    printf("%c", pop(&top));
 		}
-		char g = pop(&top);
+		char g = pop(&top); //captures the extra ) wihout printing it.
 		break;
 	    case '(':
 		push(&top,'(');
