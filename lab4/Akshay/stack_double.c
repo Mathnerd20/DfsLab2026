@@ -25,7 +25,7 @@ int main()
 	    case 1:
 		push(&top); //send address of pointer(&top), not pointer to pointer(**top). The address of pointer is the pointer to pointer top.
 		break; 
-//By putting struct node **top as argument, the compiler is getting confused and is thinking that we are trying to declare a pointer inside the function call
+	//By putting struct node **top as argument, the compiler is getting confused as it is not declared previously. 
 	    case 2:
 		pop(&top);
 		break;
