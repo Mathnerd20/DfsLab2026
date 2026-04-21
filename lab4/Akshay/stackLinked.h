@@ -5,7 +5,6 @@ struct node
     char info;
     struct node *next;
 };
-
 void push(struct node **top, char c)
 {
     struct node *tmp;

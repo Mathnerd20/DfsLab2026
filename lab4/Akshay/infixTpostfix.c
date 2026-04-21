@@ -1,13 +1,14 @@
-#include"stack.h"
+#include"stackLinked.h"
 #define MAX 100
 
-void kop(struct node **top)
+void kop(struct node **top) //useless incorrect function
 {
     while((*top)->next != NULL && (*top)->info != '(' )
     {
 	printf("%c", pop(top));
     }
 }
+
 int main()
 {
     printf("Enter expression: ");
@@ -41,7 +42,8 @@ int main()
 		char y = top->info;
 		if(y == '*' || y == '/')
 		{
-		    kop(&top);
+		    //kop(&top);
+		    printf("%c", pop(&top));
 		    push(&top, '/');
 		}
 		else
@@ -53,7 +55,8 @@ int main()
 		y = top->info;
 		if(y == '*' || y == '/')
 		{
-		    kop(&top);
+		    //kop(&top);
+		    printf("%c", pop(&top));
 		    push(&top, '*');
 		}
 		else
@@ -65,7 +68,8 @@ int main()
 		y = top->info;
 		if(y == '*' || y == '/' || y == '+' || y == '-')
 		{
-		    kop(&top);
+		    //kop(&top);
+		    printf("%c", pop(&top));
 		    push(&top, '+');
 		}
 		else
@@ -77,7 +81,8 @@ int main()
 		y = top->info;
 		if(y == '*' || y == '/' || y == '+' || y == '-')
 		{
-		    kop(&top);
+		    //kop(&top);
+		    printf("%c", pop(&top));
 		    push(&top, '-');
 		}
 		else
