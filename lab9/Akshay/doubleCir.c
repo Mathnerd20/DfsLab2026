@@ -13,6 +13,7 @@ struct node *left;
 // typedef struct node struct node;
 
 struct node *rear = NULL;
+
 void addfirst();
 void addlast();
 void addI(int i);
