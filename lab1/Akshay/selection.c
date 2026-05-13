@@ -1,12 +1,8 @@
 #include<stdio.h>
+
 void selrec(int, int, int[]);
-/*void swap(int a, int b)
-{
-	int k = a;
-	a = b;
-	b = k;
-}*/
 int listmin(int, int, int[]);
+
 int main()
 {
 	int n;
