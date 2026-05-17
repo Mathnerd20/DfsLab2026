@@ -1,6 +1,8 @@
 #include<stdio.h>
+
 void mergesort(int, int, int , int []);
 void merge(int, int, int, int, int, int []);
+
 int main()
 {
 	int n;
@@ -18,6 +20,7 @@ int main()
 		printf("%d ", a[i]);
 	}
 }
+
 void mergesort(int n, int f, int l, int a[])
 {
 	if(f < l)
@@ -29,6 +32,7 @@ void mergesort(int n, int f, int l, int a[])
 	}
 	return;
 }
+
 void merge(int n, int lf, int ll, int rf, int rl, int a[])
 {
 	int c[n];

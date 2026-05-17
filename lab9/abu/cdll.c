@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <unistd.h>
+
 #define WIDTH 60
 #define HEIGHT 30
 

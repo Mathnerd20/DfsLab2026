@@ -8,6 +8,7 @@ struct node
 
 // typedef struct node struct node;
 struct node *top = NULL;
+
 void push();
 void pop();
 void display();
@@ -45,7 +46,7 @@ void push()
     printf("Enter struct node to be pushed into the list: ");
     int p;
     scanf("%d", &p);
-    /*if(top == NULL) 
+    /*if(top == NULL)
     {
 	tmp->next = NULL;
     }*/
@@ -56,7 +57,7 @@ void push()
 void pop()
 {
     struct node *tmp;
-    if(top == NULL) 
+    if(top == NULL)
     {
 	printf("Stack Empty");
 	return;
@@ -68,26 +69,26 @@ void pop()
 }
 void display()
 {
-    struct node *John = top;
-    while(John != NULL)
+    struct node *skipper = top;
+    while(skipper != NULL)
     {
-	printf("%d \n", John->info);
-	John = John->next;
+	printf("%d \n", skipper->info);
+	skipper = skipper->next;
     }
 }
 void reverse()
 {
-    struct node *today = top;
-    struct node *tmrw = today->next;
-    struct node *keep;
-    while(tmrw != NULL)
+    struct node *a = top;
+    struct node *b = a->next;
+    struct node *r = b->next;
+    while(b != NULL)
     {
-	keep = tmrw->next;
-	tmrw->next = today;
-	today = tmrw;
-	tmrw = keep;
+        b->next = a;
+    	a = b;
+    	b = r;
+    	if(r != NULL)
+    	    r = r->next;
     }
-    top->next = NULL;
-    top = today;
+    top = a;
     return;
 }

@@ -14,24 +14,29 @@ int main()
 		printf("Enter element number %d: ", i+1);
 		scanf("%d", &a[i]);
 	}
+
 	selrec(0, n-1, a);
+
 	for(int i = 0; i < n; i++)
 	{
 		printf("%d ", a[i]);
 	}
 }
+
 void selrec(int f, int n, int a[n])
 {
 	if(f < n)
 	{
 		int k;
+		int min = listmin(f, n, a);
 		k = a[f];
-		a[f] = a[listmin(f,n,a)];
-		a[listmin(f,n,a)] = k;
+		a[f] = a[min];
+		a[min] = k;
 		selrec(f+1, n, a);
 	}
 	return;
 }
+
 int listmin(int f, int n, int a[n])
 {
 	int min = a[f];

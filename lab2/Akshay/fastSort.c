@@ -1,9 +1,11 @@
 //Option given to select between Merge Sort and Quick Sort
 #include<stdio.h>
+
 void mergesort(int, int, int , int []);
 void merge(int, int, int, int, int, int []);
 void quicksort(int, int, int, int[]);
 int partition(int, int, int, int[]);
+
 int main()
 {
 	int n;

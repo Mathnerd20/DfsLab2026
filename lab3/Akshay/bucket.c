@@ -1,6 +1,8 @@
 //done at home
 #include<stdio.h>
+
 void swap(float *, float *);
+
 int main()
 {
     int n;
@@ -65,4 +67,3 @@ void swap(float *a, float *b)
     *b = k;
     return;
 }
-

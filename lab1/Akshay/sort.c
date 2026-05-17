@@ -1,6 +1,8 @@
 #include<stdio.h>
+
 void selrec(int, int, int[]);
 int listmin(int, int, int[]);
+
 int main()
 {
 	int n;

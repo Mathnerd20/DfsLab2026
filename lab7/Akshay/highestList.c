@@ -12,6 +12,7 @@ void push();
 void pop();
 void display();
 void Highest();
+
 int main()
 {
     int t = 10;
@@ -45,7 +46,7 @@ void push()
     printf("Enter struct node to be pushed into the list: ");
     int p;
     scanf("%d", &p);
-    /*if(top == NULL) 
+    /*if(top == NULL)
     {
 	tmp->next = NULL;
     }*/
@@ -53,10 +54,11 @@ void push()
     tmp->info = p;
     top = tmp;
 }
+
 void pop()
 {
     struct node *tmp;
-    if(top == NULL) 
+    if(top == NULL)
     {
 	printf("Stack Empty");
 	return;
@@ -66,6 +68,7 @@ void pop()
     top = top->next;
     free(tmp);
 }
+
 void display()
 {
     struct node *John = top;
@@ -75,17 +78,18 @@ void display()
 	John = John->next;
     }
 }
+
 void Highest()
 {
     struct node *skipper = top;
     int max = top->info;
     while(skipper != NULL)
     {
-	if(skipper->info > max)
-	{
-	    max = skipper->info;
-	}
-	skipper =  skipper->next;
+    	if(skipper->info > max)
+    	{
+    	    max = skipper->info;
+    	}
+    	skipper =  skipper->next;
     }
     printf("%d \n", max);
 }

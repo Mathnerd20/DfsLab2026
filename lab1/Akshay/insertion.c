@@ -10,6 +10,7 @@ int main()
 		printf("Enter element number %d: ", i+1);
 		scanf("%d", &a[i]);
 	}
+	//logic
 	for(int i = 0; i < n-1; i++)
 	{
 		int j = i + 1;
@@ -21,6 +22,7 @@ int main()
 			j--;
 		}
 	}
+
 	for(int i = 0; i < n; i++)
 	{
 		printf("%d ", a[i]);
